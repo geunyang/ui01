@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>이미지태그실습</title>
+<style>
+a {
+	text-decoration: none; /* 언더라인제거태그 */
+	color: inherit; /* or initial; */
+}
+</style>
+</head>
+<body>
+<h2>링크</h2>
+<p>
+a태그 : 현재 웹 페이지에서 다른 페이지로 연결하기 위한 형태
+a태그로 링크를 적용 한다
+</p>
+
+
+<h2 id='no1'>이미지태그</h2>
+<p>img 태그 : 이미지태그<br>
+	폴더 내의 이미지 표현, 웹 상의 이미지 표현
+</p>
+<p>
+링크할 페이지를 새창에서 연결하려면 target 속성값을 _blank 로 지정<br>
+지정하지 않으면 현재 창에서 열리는 기본 형태 _self<br>
+링크를 현재 페이지의 특정 위치로 연결할 수 있으며 이런 형태를 앵커(anchor)라고 한다
+id 지정 후 a href='id값'
+</p>
+<h3><a target='_blank' href='https://naver.com'>네이버연결</a></h3>
+<h3 id='no2'><a target='_self' href='#no1'>폴더 내의 이미지 표현</a></h3>
+<!-- 현재 페이지와 다른 폴더에 있는 이미지 파일을 찾아가는 경우 
+. 현재위치, .. 상위폴더로 나간 위치  -->
+<img src='../images/html/field_1280.jpg' width="500px" height="300px">
+<hr>
+
+<!-- 현재 페이지가 동일한 폴더에 있는 이미지파일을 찾아가는 경우
+alt 이미지파일이 정상 로딩 되지 않는 경우 이미지에 대한 설명을 넣는 속성
+title 마우스를 가져다 댔을때 설명을 말풍선으로 나타내는 속성  -->
+<img src='images/red_1920.jpg' title="평화이미지" alt="평화이미지" style="width:300px; height:500px;">
+<hr>
+
+<h3><a href='#no2'>웹상의 이미지 표현</a></h3>
+<img src='https://www.codingfactory.net/wp-content/uploads/abc.jpg'>
+<p>
+<a href='#'>맨위로</a>
+</p>
+</body>
+</html>

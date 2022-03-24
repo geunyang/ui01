@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+table {
+	width: 600px;
+	border-collapse: collapse;
+}
+table th, table td {
+	padding: 20px 10px ;
+	font-size: 15px;
+	border: 1px solid #000000;
+}
+</style>
+</head>
+<body>
+	<table>
+	<caption>회원가입정보</caption>
+		<form action='220321form.html' autocomplete='off' method='post' enctype='multyport/form-data'>
+			<tr>
+				<th>아이디</th>
+				<td><div><input type='text' name='id'></div></td>
+			</tr>
+			<tr>
+				<th>비밀번호</th>
+				<td><div><input type='password' name='password'></div></td>
+			</tr>
+			<tr>
+				<th>비밀번호확인</th>
+				<td><div><input type='password' name='password_ck'></div></td>
+			</tr>
+			<tr>
+				<th>이름</th>
+				<td><div><input type='text' name='name'></div></td>
+			</tr>
+			<tr>
+				<th>성별</th>
+				<td><div><label><input type='radio' name='gender' value='남'>남</label>
+				<label><input type='radio' name='gender' value='여'>여</label></div></td>
+			</tr>
+			<tr>
+				<th>전화번호</th>
+				<td><div><select name='location'>
+					<option>02</option>
+					<option>062</option>
+					<option>031</option></select>
+				<input type='text' name='phone'>
+				<input type='text' name='phone'></div>
+				</td>
+			</tr>
+			<tr>
+				<th>SMS수신여부</th>
+				<td><div><label><input type='checkbox' name='sms' value='수신함'>수신함</label></div></td>
+			</tr>
+			<tr>
+				<th>이메일</th>
+				<td><div><input type='text' name='email'>
+					<input type='hidden' name='id' value='@'>@
+					<select name='mail' >
+					<option value=selected>직접입력</option>
+					<option value='naver.com'>네이버</option>
+					<option value='gmail.com'>구글</option>
+					<option value='daum.net'>다음</option>
+					</select>
+				</div></td>
+			</tr>
+			<tr>
+				<th>사진등록</th>
+				<td><input type='file' name='filename'></td>
+			</tr>
+			<tr>
+				<th colspan='2'><div><input type='submit' value='회원가입'></div></th>
+			</tr>
+		</form>
+	</table>
+</body>
+</html>

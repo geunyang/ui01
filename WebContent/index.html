@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>웹문서만들기</title>
+<style>
+a { text-decoration: none; color: inherit; cursor: pointer; }
+</style>
+</head>
+<body>
+
+<ul>
+	<li><a target='_blank' onclick="alert('식단표 클릭!')">alert창띄우기</a></li>
+	<li><a target='_blank' onclick="href='table.html'">식단표</a></li>
+	<li><a target='_blank' href='./html/image.html'>이미지파일실습</a></li>
+	<li><a target='_blank' href='./html/video.html'>비디오파일실습</a></li>
+	<li><a target='_blank' href='./html/ex02.html'>실습정리</a></li>
+</ul>
+
+<hr>
+<>로 표현하는 태그<br>
+여는태그와 닫는태그가 있고,
+여는 태그만 사용하는 태그도 있다.<br><br>
+
+1.블록 레벨 텍스트 태그<br>
+: 혼자서 한 줄을 차지하여 너비가 100% 꽉 차게 표시되는 태그<br>
+
+1)h태그 : heading태그 제목을 표시하는 태그로 h1~h6이 있다
+<h1>가장 큰 제목</h1>
+<h6>가장 작은 제목 태그</h6>
+<br><br>
+<p>
+2)p태그:paragraph 단락을 표시하는 태그로 줄바꿈없이 텍스트가 한 줄로 표시됨<br>
+텍스트의 길이가 브라우저 창의 너비보다 길면 자동으로 줄이 바뀐다.
+</p>
+
+br태그:줄바꿈 처리하는 태그로 닫는 태그가 없다<br>
+<hr>
+<p>
+hr태그(horizontal):주제가 바뀌거나 할때 분위기 전환을 위한 가로선 표시<br>
+닫는 태그가 없다.
+</p>
+
+<div>
+div태그(division):영역을 나누는 블록 태그
+</div>
+
+<hr>
+
+<h3>2.인라인 레벨 텍스트 태그</h3>
+<p>한 줄을 차지하지 않는 태그로 화면에 표시되는 컨텐츠만큼의 너비를 차지한다
+</p>
+<!-- 여러줄을 한꺼번에 주석처리 할떄는 ctrl+shift+/ -->
+실행에서 제외하고자 하는 코드는 주석처리를 한다.ctrl+shift+c(줄단위/반복시해제)
+자동완성: ctrl+space<br>
+블록설정:shift+방향키)<br>코드복사:ctrl+alt+방향키<br>코드이동:alt+방향키<br>
+코드라인삭제:ctrl+d
+<p>
+<strong>
+1)strong태그:텍스트를 굵게 표시하는 인라인 레벨 태그
+</strong>
+</p>
+<strong>굵은 텍스트</strong><br>
+
+2)span태그:특별한 뜻은 없지만 텍스트의 일부만 스타일 적용할때 주로 사용 스타일 미적용시에도 차후 수정 여부 표시위해 사용
+<p>텍스트 일부만 <span style="color:red">스타일</span> 적용하기
+</p>
+
+
+<h3>3.목록을 만드는 태그</h3>
+<!--
+ul(unordered list): 순서 없는 목록 태그
+ol(ordered list): 순서가 있는 목록 태그
+-->
+<ul>
+	<li>메뉴1</li>
+	<li>메뉴2</li>
+	<li>메뉴3</li>
+	<li>메뉴4</li>
+	<li>메뉴5</li>
+</ul>
+<ol>
+	<li>얏호</li>
+	<li>우르롹끼</li>
+	<li>모부기</li>
+</ol>
+
+로컬 ip 주소 : 실제 ip 주소 , localhost, 127.0.0.1
+
+
+
+
+</body>
+</html>
